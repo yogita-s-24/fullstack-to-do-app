@@ -12,7 +12,7 @@ function App() {
       title: title,
       description: description
     })
-    alert(date?.message);
+    alert(data?.message);
     setTitle("");
     setDescription("");
   }
@@ -32,7 +32,7 @@ function App() {
           setDescription(e.target.value);
         }}/>
 
-        <button className="todo-add" onClick={addTask}>Add Task</button>
+        <button className="todo-add" onClick={addTask}>Add Task</button> 
       </div>
     </>
   );
