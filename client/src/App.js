@@ -54,18 +54,19 @@ const deleteTask = async(taskId)=>{
       </div>
 
       <div className="todo-container">
+      <h2 className='add-task'>All Tasks📃</h2>
        {
         tasks.map((task)=>{
           return(
          
             <div className='task-card'>
-
+               <div className='task-content'>
               <p className='title-title'>{task?.title}</p>
               <p className='des-des'>{task?.description}</p>
               <div className='del-btn' onClick={()=>{
                 deleteTask(task?._id);
               }}>❌</div>
-              
+              </div>
             </div>
           )
         })
