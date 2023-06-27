@@ -4,7 +4,8 @@ text-align: center;
 
 .todo-container{
 background-color: aquamarine;
-height: 300px;
+height: 400px;
+overflow: scroll;
 }
 
 .todo-form-container{
@@ -24,4 +25,14 @@ height: 300px;
 
 .todo-add{
   margin: 10px;
+}
+
+.task-card{
+  background-color: white;
+  border:1px solid black;
+  width: 400px;
+  display: block;
+  margin: 5px auto;
+  padding: 10px;
+  border-radius: 20px;
 }
