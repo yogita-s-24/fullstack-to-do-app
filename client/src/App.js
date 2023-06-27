@@ -39,22 +39,9 @@ const deleteTask = async(taskId)=>{
   return (
     <>
       <h1 className="app-title">TODO APP</h1>
-      <div className="todo-container">
-       {
-        tasks.map((task)=>{
-          return(
-            <div className='task-card'>
-              <h3>{task?.title}</h3>
-              <p>{task?.description}</p>
-              <button onClick={()=>{
-                deleteTask(task?._id);
-              }}>Delete Task</button>
-            </div>
-          )
-        })
-       }
-      </div>
+      <div className='container'>
       <div className="todo-form-container">
+        <h2 className='add-task' >➕ Add Tasks </h2>
         <input type="text" className="todo-title" placeholder="Enter Title" value={title} onChange={(e)=>{
           setTitle(e.target.value);
         }}/>
@@ -62,8 +49,29 @@ const deleteTask = async(taskId)=>{
         <input type="text" className="todo-description" placeholder="Enter Description" value={description} onChange={(e)=>{
           setDescription(e.target.value);
         }}/>
-
+    
         <button className="todo-add" onClick={addTask}>Add Task</button> 
+      </div>
+
+      <div className="todo-container">
+       {
+        tasks.map((task)=>{
+          return(
+         
+            <div className='task-card'>
+
+              <p className='title-title'>{task?.title}</p>
+              <p className='des-des'>{task?.description}</p>
+              <div className='del-btn' onClick={()=>{
+                deleteTask(task?._id);
+              }}>❌</div>
+              
+            </div>
+          )
+        })
+       }
+      </div>
+      
       </div>
     </>
   );

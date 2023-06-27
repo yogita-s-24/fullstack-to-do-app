@@ -1,38 +1,109 @@
-.app-title{
-text-align: center;
+.app-title {
+  text-align: center;
 }
 
-.todo-container{
-background-color: aquamarine;
-height: 400px;
-overflow: scroll;
+.container {
+  display: flex;
+  padding: 50px;
+  /* background-color: #FFE4A7; */
+  /* border: #000 1px solid; */
+  /* width: 1150px; */
 }
 
-.todo-form-container{
-  background-color: bisque;
-  padding: 20px;
+.todo-container {
+  background-color: white;
+  height: 250px;
+  overflow: scroll;
+  padding: 50px;
+  width: 450px;
+  border-radius: 10px 0px 0px 0px;
+  border: 1px solid black;
+  box-shadow: #312f2f 1px 1px 7px 2px;
+  margin-left: 90px;
+}
+
+.add-task {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.todo-form-container {
+  background-color: white;
+  padding: 30px;
   display: flex;
   justify-content: center;
-}
-
-.todo-title{
-  margin: 10px;
-}
-
-.todo-description{
-  margin: 10px;
-}
-
-.todo-add{
-  margin: 10px;
-}
-
-.task-card{
-  background-color: white;
-  border:1px solid black;
-  width: 400px;
-  display: block;
-  margin: 5px auto;
-  padding: 10px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
   border-radius: 20px;
+  border: 1px solid #000;
+  box-shadow: #312f2f 1px 1px 7px 2px;
+}
+
+.todo-title {
+  margin: 10px;
+  width: 400px;
+  padding: 10px;
+  background-color: #FFE4A7;
+  margin: 0 auto;
+  border: 1px solid #460C68;
+  border-radius: 5px;
+}
+
+.todo-description {
+  margin: 10px;
+  width: 400px;
+  padding: 10px;
+  background-color: #FFE4A7;
+  margin: 0 auto;
+  margin-top: 50px;
+  border: 1px solid #460C68;
+  border-radius: 5px;
+}
+
+.todo-add {
+  margin: 10px;
+  background-color: #460C68;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 400px;
+  cursor: pointer;
+}
+
+.task-card {
+  background-color: #FFE4A7;
+  border: 1px solid black;
+  /* width: 400px; */
+  border-radius: 20px;
+  margin-top: 7px;
+  padding: 0px 0px 0px 10px;
+}
+
+.del-btn {
+  background-color: white;
+  width: 20px;
+  padding: 7px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 215px;
+  right: 130px;
+
+
+}
+
+.title-title {
+  /* margin-top: 3px; */
+}
+
+.des-des {
+  margin-bottom: 3px;
 }
