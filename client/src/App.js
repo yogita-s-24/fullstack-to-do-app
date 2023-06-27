@@ -41,7 +41,7 @@ const deleteTask = async(taskId)=>{
       <h1 className="app-title">TODO APP</h1>
       <div className='container'>
       <div className="todo-form-container">
-        <h2 className='add-task' >➕ Add Tasks </h2>
+        <h2 className='add-task' >➕ Add Tasks</h2>
         <input type="text" className="todo-title" placeholder="Enter Title" value={title} onChange={(e)=>{
           setTitle(e.target.value);
         }}/>

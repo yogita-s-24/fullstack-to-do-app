@@ -80,9 +80,10 @@
   background-color: #FFE4A7;
   border: 1px solid black;
   /* width: 400px; */
-  border-radius: 20px;
+  border-radius: 10px;
   margin-top: 7px;
-  padding: 0px 0px 0px 10px;
+  padding: 0px 0px 0px 15px;
+ 
 }
 
 .del-btn {
@@ -93,11 +94,9 @@
   cursor: pointer;
   border: 1px solid black;
   border-radius: 50%;
-  position: absolute;
-  top: 215px;
-  right: 130px;
-
-
+  position:relative;
+  left: 370px;
+  bottom:40px;
 }
 
 .title-title {
