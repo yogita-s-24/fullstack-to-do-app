@@ -16,7 +16,7 @@
   overflow-y: scroll;
   padding: 50px;
   width: 450px;
-  border-radius: 10px 0px 0px 0px;
+  border-radius: 10px 0px 0px 10px;
   border: 1px solid black;
   box-shadow: #312f2f 1px 1px 7px 2px;
   margin-left: 90px;
